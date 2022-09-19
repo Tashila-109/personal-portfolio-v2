@@ -5,7 +5,7 @@ import CallToAction from '@components/Call-to-action/call-to-action';
 import Footer from '@components/Footer/footer';
 import Team from '@components/Team/team';
 import DarkTheme from '@layouts/Dark';
-import Works3 from '@components/Works3/works3';
+import Works from '@components/Works-section-grid';
 import Blogs4 from '@components/blogs/Blogs4/blogs4';
 import Intro from '@components/Intro/intro';
 import AboutUs from '@components/About-us/about-us';
@@ -37,7 +37,7 @@ const Home = () => {
       <Navbar nr={navbarRef} lr={logoRef} />
       <Intro />
       <AboutUs />
-      <Works3 />
+      <Works />
       <Services3 />
       <MinimalArea2 />
       <FullTestimonials classText='pb-0' />
