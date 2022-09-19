@@ -5,9 +5,9 @@ import classNames from 'classnames';
 
 import initIsotope from '@common/initIsotope';
 
-import styles from './Works-section-grid.module.css';
+import styles from './Code-snippets-section.module.css';
 
-const WorksSectionGrid = () => {
+const CodeSnippetsGrid = () => {
   React.useEffect(() => {
     setTimeout(() => {
       initIsotope();
@@ -21,10 +21,10 @@ const WorksSectionGrid = () => {
           <div className='col-lg-8 col-md-10'>
             <div className='sec-head  text-center'>
               <h6 className='wow fadeIn' data-wow-delay='.5s'>
-                Portfolio
+                Library
               </h6>
-              <h3 className='wow color-font'>Featured Projects</h3>
-              <p>Some projects that I&apos;m proud of.</p>
+              <h3 className='wow color-font'>Code Snipets Library</h3>
+              <p>List of code snippets</p>
             </div>
           </div>
         </div>
@@ -160,4 +160,4 @@ const WorksSectionGrid = () => {
   );
 };
 
-export default WorksSectionGrid;
+export default CodeSnippetsGrid;

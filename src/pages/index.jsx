@@ -1,12 +1,14 @@
 import React from 'react';
-import Navbar from '@components/Navbar/navbar';
-import CallToAction from '@components/Call-to-action/call-to-action';
-import Footer from '@components/Footer/footer';
+
 import DarkTheme from '@layouts/Dark';
-import Works from '@components/Works-section-grid';
-import Blogs from '@components/Blogs-section';
+import Navbar from '@components/Navbar/navbar';
 import Intro from '@components/Intro/intro';
 import AboutUs from '@components/About-us/about-us';
+import Works from '@components/Works-section-grid';
+import Blogs from '@components/Blogs-section';
+import CodeSnippets from '@components/Code-snippets-section';
+import CallToAction from '@components/Call-to-action/call-to-action';
+import Footer from '@components/Footer/footer';
 
 const Home = () => {
   const navbarRef = React.useRef(null);
@@ -35,6 +37,7 @@ const Home = () => {
       <AboutUs />
       <Works />
       <Blogs />
+      <CodeSnippets />
       <CallToAction />
       <Footer />
     </DarkTheme>
