@@ -1,8 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
+import classNames from 'classnames';
 
 import initIsotope from '@common/initIsotope';
+
+import styles from './Works-section-grid.module.css';
 
 const WorksFilterGrid = () => {
   React.useEffect(() => {
@@ -144,6 +147,13 @@ const WorksFilterGrid = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className={classNames('mt-30 text-center', styles.Buttons)}>
+          <Link href={`/`}>
+            <a className='butn bord curve'>
+              <span>See More Projects</span>
+            </a>
+          </Link>
         </div>
       </div>
     </section>
