@@ -15,7 +15,7 @@ const LoadingScreen = () => {
     } else {
       bodyEl.classList.add("hideX");
     }
-  });
+  }, []);
   return (
     <>
       <div className={`${appData.showLoading === true ? "showX" : "hideX"}`}>
