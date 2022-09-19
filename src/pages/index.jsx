@@ -8,7 +8,7 @@ import DarkTheme from '@layouts/Dark';
 import Works3 from '@components/Works3/works3';
 import Blogs4 from '@components/blogs/Blogs4/blogs4';
 import Intro from '@components/Intro/intro';
-import AboutUs3 from '@components/About-us3/about-us3';
+import AboutUs from '@components/About-us/about-us';
 import Services3 from '@components/Services3/services3';
 import MinimalArea2 from '@components/Minimal-Area2/minimal-area2';
 
@@ -36,7 +36,7 @@ const Home = () => {
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <Intro />
-      <AboutUs3 />
+      <AboutUs />
       <Works3 />
       <Services3 />
       <MinimalArea2 />

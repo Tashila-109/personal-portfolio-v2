@@ -23,7 +23,7 @@ const Intro = ({ sliderRef, blackStar }) => {
               </h1>
             </div>
             <div className={classNames('mt-50', styles.AboutMe)}>
-              {/* <Link href={`/about/about-dark`}>
+              {/* <Link href={`/`}>
                 <a className='butn bord curve'>
                   <span>About Me</span>
                 </a>
