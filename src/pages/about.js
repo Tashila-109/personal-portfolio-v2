@@ -2,15 +2,14 @@ import React from 'react';
 
 import DarkTheme from '@layouts/Dark';
 import Navbar from '@components/Navbar/navbar';
-import Intro from '@components/Intro/intro';
-import AboutUs from '@components/About-us/about-us';
-import Works from '@components/Works-section-grid';
-import Blogs from '@components/Blogs-section';
-import CodeSnippets from '@components/Code-snippets-section';
+import AboutIntro from '@components/About-intro';
+import Services from '@components/Services/services';
+import Clients from '@components/Clients/clients';
 import CallToAction from '@components/Call-to-action/call-to-action';
 import Footer from '@components/Footer/footer';
+import PagesHeader from '@components/Pages-header';
 
-const Home = () => {
+const About = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
@@ -32,16 +31,15 @@ const Home = () => {
 
   return (
     <DarkTheme>
-      <Navbar nr={navbarRef} lr={logoRef} />
-      <Intro />
-      <AboutUs />
-      <Works />
-      <Blogs />
-      <CodeSnippets />
+      <Navbar nr={navbarRef} lr={logoRef} from='about-dark' />
+      <PagesHeader />
+      <AboutIntro />
+      <Services style='4item' />
+      <Clients theme='dark' />
       <CallToAction />
       <Footer />
     </DarkTheme>
   );
 };
 
-export default Home;
+export default About;

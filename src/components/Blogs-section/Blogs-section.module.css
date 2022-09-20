@@ -1,0 +1,12 @@
+.UpfrontPosition {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.BlogCard {
+  position: relative !important;
+  z-index: 2 !important;
+}
+.BlogCard:hover {
+  cursor: pointer;
+}
