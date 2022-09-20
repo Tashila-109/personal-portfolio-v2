@@ -17,7 +17,7 @@ export const handleDropdown = (e) => {
   e.target.parentElement.childNodes[1].classList.toggle("show");
 };
 
-export const handleMobileDropdown = (e) => {
+export const handleMobileDropdown = () => {
   document
     .getElementById("navbarSupportedContent")
     .classList.toggle("show-with-trans");

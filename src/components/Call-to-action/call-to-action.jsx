@@ -24,7 +24,7 @@ const CallToAction = ({ img }) => {
           </div>
 
           <div className={classNames('col-md-4 col-lg-3 valign', styles.Buttons)}>
-            <Link href={`/contact/contact-dark`}>
+            <Link href={`/`}>
               <a className='butn bord curve wow fadeInUp' data-wow-delay='.5s'>
                 <span>Get In Touch</span>
               </a>

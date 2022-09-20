@@ -5,7 +5,7 @@ import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
 import Clients2 from "../../components/Clients2/clients2";
 import Blogs4 from "../../components/blogs/Blogs4/blogs4";
-import Services from "../../components/Services/services";
+import Services from "../../components/Features";
 import AboutUs2 from "../../components/About-us2/about-us2";
 import Portfolio from "../../components/Portfolio/portfolio";
 import SContactForm from "../../components/s-contact-form/s-contact-form";

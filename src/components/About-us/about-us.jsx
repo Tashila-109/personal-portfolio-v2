@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 import styles from './about-us.module.css';
 
-const AboutUs = () => {
+const AboutMe = () => {
   return (
     <section className='about-us section-padding position-relative'>
       <div className='container'>
@@ -50,4 +50,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutMe;
