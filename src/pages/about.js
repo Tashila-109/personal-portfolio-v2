@@ -4,7 +4,7 @@ import DarkTheme from '@layouts/Dark';
 import Navbar from '@components/Navbar/navbar';
 import Intro from '@components/Header-intro';
 import Features from '@components/Features';
-import Clients from '@components/Clients/clients';
+import Showcase from '@components/Showcase-mini';
 import CallToAction from '@components/Call-to-action/call-to-action';
 import Footer from '@components/Footer/footer';
 import PagesHeader from '@components/Pages-header';
@@ -38,7 +38,7 @@ const About = () => {
       />
       <Intro title='About Me' />
       <Features title='Current Prefered Tech Stack' subTitle='Tech Stack' style='4item' />
-      <Clients theme='dark' />
+      <Showcase theme='dark' />
       <CallToAction />
       <Footer />
     </DarkTheme>

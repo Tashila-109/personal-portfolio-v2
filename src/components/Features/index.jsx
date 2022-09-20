@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
-import { SiNextdotjs, SiTypescript, SiNodedotjs, SiDotnet, SiRust, SiMongodb } from 'react-icons/si';
+import { SiNextdotjs, SiTypescript, SiNodedotjs, SiDotnet, SiPrisma, SiMongodb } from 'react-icons/si';
 
 const defaultProps = {
   title: 'Include Features',
@@ -26,18 +26,19 @@ const featuresData = [
     title: 'Node.js',
     content: 'Tempore corrupti temporibus fuga earum asperiores fugit.',
   },
-  {
+    {
     id: 4,
-    icon: <SiDotnet />,
-    title: 'Dotnet',
+    icon: <SiPrisma />,
+    title: 'Prisma',
     content: 'Tempore corrupti temporibus fuga earum asperiores fugit laudantium.',
   },
   {
     id: 5,
-    icon: <SiRust />,
-    title: 'Rust',
+    icon: <SiDotnet />,
+    title: 'Dotnet',
     content: 'Tempore corrupti temporibus fuga earum asperiores fugit laudantium.',
   },
+
   {
     id: 6,
     icon: <SiMongodb />,
