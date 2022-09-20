@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/navbar";
 import IntroWithSlider from "../../components/Intro-with-slider/intro-with-slider";
 import AboutUs2 from "../../components/About-us2/about-us2";
-import Services from "../../components/Services/services";
+import Services from "../../components/Features";
 import VideoWithTestimonials from "../../components/Video-with-testimonials/video-with-testimonials";
 import Footer from "../../components/Footer/footer";
 import Team from "../../components/Team/team";
