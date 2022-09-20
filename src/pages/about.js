@@ -32,7 +32,10 @@ const About = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} from='about-dark' />
-      <PagesHeader />
+      <PagesHeader 
+        title='Tashila Fernando'
+        imgUrl='https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
+      />
       <AboutIntro />
       <Services style='4item' />
       <Clients theme='dark' />
