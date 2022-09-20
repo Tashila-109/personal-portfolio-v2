@@ -45,24 +45,10 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className='nav-link'>Portfolio</a>
               </Link>
             </li>
-            <li className='nav-item dropdown' onClick={handleDropdown}>
-              <span className='nav-link dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>
-                Blog
-              </span>
-              <div className='dropdown-menu'>
-                <Link href={`/blog/blog-dark`}>
-                  <a className='dropdown-item'>Blog Standerd</a>
-                </Link>
-                <Link href={`/blog-list/blog-list-dark`}>
-                  <a className='dropdown-item'>Blog List</a>
-                </Link>
-                <Link href={`/blog-grid/blog-grid-dark`}>
-                  <a className='dropdown-item'>Blog Grid</a>
-                </Link>
-                <Link href={`/blog-details/blog-details-dark`}>
-                  <a className='dropdown-item'>Blog Details</a>
-                </Link>
-              </div>
+            <li className='nav-item' onClick={handleDropdown}>
+              <Link href={`/blog`}>
+                <a className='nav-link'>Blog</a>
+              </Link>
             </li>
           </ul>
         </div>
