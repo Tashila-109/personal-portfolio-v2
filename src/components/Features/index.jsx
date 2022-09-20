@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconContext } from 'react-icons';
 import { SiNextdotjs, SiTypescript, SiNodedotjs, SiDotnet, SiRust, SiMongodb } from 'react-icons/si';
 
 const defaultProps = {
@@ -59,34 +60,36 @@ const Services = ({ title = defaultProps.title, subTitle = defaultProps.subTitle
             </div>
           </div>
         </div>
-        <div className='row'>
-          {style === '4item'
-            ? featuresData.map(feature => (
-                <div
-                  key={feature.id}
-                  className='col-lg-6 wow fadeInLeft'
-                  data-wow-delay={`${feature.id == 1 ? '.5' : feature.id === 2 ? '.7' : feature.id === 3 ? '.9' : '1.1'}s`}
-                >
-                  <div className='item-box'>
-                    <div>{feature.icon}</div>
-                    <div className='cont'>
+        <IconContext.Provider value={{ color: '#ffffff', size: '3.8rem' }}>
+          <div className='row'>
+            {style === '4item'
+              ? featuresData.map(feature => (
+                  <div
+                    key={feature.id}
+                    className='col-lg-6 wow fadeInLeft'
+                    data-wow-delay={`${feature.id == 1 ? '.5' : feature.id === 2 ? '.7' : feature.id === 3 ? '.9' : '1.1'}s`}
+                  >
+                    <div className='item-box'>
+                      <div>{feature.icon}</div>
+                      <div className='cont'>
+                        <h6>{feature.title}</h6>
+                        <p>{feature.content}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              : // max item 3
+                featuresData.slice(0, 3).map(feature => (
+                  <div key={feature.id} className='col-lg-4 wow fadeInLeft' data-wow-delay='.5s'>
+                    <div className='item-box md-mb50'>
+                      <span className={`icon ${feature.icon}`}></span>
                       <h6>{feature.title}</h6>
                       <p>{feature.content}</p>
                     </div>
                   </div>
-                </div>
-              ))
-            : // max item 3
-              featuresData.slice(0, 3).map(feature => (
-                <div key={feature.id} className='col-lg-4 wow fadeInLeft' data-wow-delay='.5s'>
-                  <div className='item-box md-mb50'>
-                    <span className={`icon ${feature.icon}`}></span>
-                    <h6>{feature.title}</h6>
-                    <p>{feature.content}</p>
-                  </div>
-                </div>
-              ))}
-        </div>
+                ))}
+          </div>
+        </IconContext.Provider>
       </div>
       {lines ? (
         <>
