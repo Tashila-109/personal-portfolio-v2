@@ -82,7 +82,7 @@ const Navbar = ({ lr, nr, theme }) => {
               </div>
             </li>
             <li className="nav-item">
-              <Link href={`/about/about-dark`}>
+              <Link href={`/about`}>
                 <a className="nav-link">About</a>
               </Link>
             </li>
