@@ -2,9 +2,9 @@ import React from 'react';
 
 import DarkTheme from '@layouts/Dark';
 import Navbar from '@components/Navbar/navbar';
-import Footer from '@components/Footer/footer';
 import Header from '@components/Text-header';
 import Projects from '@components/Projects-grid';
+import Footer from '@components/Footer/footer';
 
 const Portfolio = () => {
   const fixedHeader = React.useRef(null);

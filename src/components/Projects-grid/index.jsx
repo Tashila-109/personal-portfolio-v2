@@ -51,7 +51,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay='.4s'
             >
               <div className='item-img'>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='imago wow'>
                     <Image src='/img/portfolio/portfolio/1/1.jpg' alt='image' width={369.99} height={240} />
                     <div className='item-img-overlay'></div>
@@ -61,10 +61,10 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
 
               <div className='cont'>
                 <h6>
-                  <Link href='/works3/works3-dark'>Creativity Demand</Link>
+                  <Link href='/portfolio/details'>Creativity Demand</Link>
                 </h6>
                 <span>
-                  <Link href='/works3/works3-dark'>Design</Link>,<Link href='/works3/works3-dark'>WordPress</Link>
+                  <Link href='/portfolio/details'>Design</Link>,<Link href='/portfolio/details'>WordPress</Link>
                 </span>
               </div>
             </div>
@@ -74,7 +74,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay='.4s'
             >
               <div className='item-img'>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='imago wow'>
                     <Image src='/img/portfolio/portfolio/1/2.jpg' alt='image' width={369.99} height={240} />
                     <div className='item-img-overlay'></div>
@@ -84,7 +84,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               <div className='cont'>
                 <h6>Through The Breaking</h6>
                 <span>
-                  <Link href='/works3/works3-dark'>Design</Link>,<Link href='/works3/works3-dark'>WordPress</Link>
+                  <Link href='/portfolio/details'>Design</Link>,<Link href='/portfolio/details'>WordPress</Link>
                 </span>
               </div>
             </div>
@@ -94,7 +94,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay='.4s'
             >
               <div className='item-img'>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='imago wow'>
                     <Image src='/img/portfolio/portfolio/1/3.jpg' alt='image' width={369.99} height={240} />
                     <div className='item-img-overlay'></div>
@@ -104,7 +104,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               <div className='cont'>
                 <h6>Create With Creatives</h6>
                 <span>
-                  <Link href='/works3/works3-dark'>Design</Link>,<Link href='/works3/works3-dark'>WordPress</Link>
+                  <Link href='/portfolio/details'>Design</Link>,<Link href='/portfolio/details'>WordPress</Link>
                 </span>
               </div>
             </div>
@@ -114,7 +114,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay='.4s'
             >
               <div className='item-img'>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='imago wow'>
                     <Image src='/img/portfolio/portfolio/1/4.jpg' alt='image' width={369.99} height={240} />
                     <div className='item-img-overlay'></div>
@@ -124,7 +124,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               <div className='cont'>
                 <h6>Energies of Love</h6>
                 <span>
-                  <Link href='/works3/works3-dark'>Design</Link>,<Link href='/works3/works3-dark'>WordPress</Link>
+                  <Link href='/portfolio/details'>Design</Link>,<Link href='/portfolio/details'>WordPress</Link>
                 </span>
               </div>
             </div>
@@ -134,7 +134,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay='.4s'
             >
               <div className='item-img'>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='imago wow'>
                     <Image src='/img/portfolio/portfolio/1/5.jpg' alt='image' width={369.99} height={240} />
                     <div className='item-img-overlay'></div>
@@ -144,7 +144,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               <div className='cont'>
                 <h6>See It Yourself</h6>
                 <span>
-                  <Link href='/works3/works3-dark'>Design</Link>,<Link href='/works3/works3-dark'>WordPress</Link>
+                  <Link href='/portfolio/details'>Design</Link>,<Link href='/portfolio/details'>WordPress</Link>
                 </span>
               </div>
             </div>
@@ -154,7 +154,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay='.4s'
             >
               <div className='item-img'>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='imago wow'>
                     <Image src='/img/portfolio/portfolio/1/6.jpg' alt='image' width={369.99} height={240} />
                     <div className='item-img-overlay'></div>
@@ -164,7 +164,7 @@ const ProjectCardsGrid = ({ grid, hideFilter, filterPosition }) => {
               <div className='cont'>
                 <h6>Blast From The Past</h6>
                 <span>
-                  <Link href='/works3/works3-dark'>Design</Link>,<Link href='/works3/works3-dark'>WordPress</Link>
+                  <Link href='/portfolio/details'>Design</Link>,<Link href='/portfolio/details'>WordPress</Link>
                 </span>
               </div>
             </div>
