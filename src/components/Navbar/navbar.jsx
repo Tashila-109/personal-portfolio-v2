@@ -8,9 +8,7 @@ const Navbar = ({ lr, nr, theme }) => {
     <nav ref={nr} className={`navbar navbar-expand-lg change ${theme === 'themeL' ? 'light' : ''}`}>
       <div className='container'>
         <Link href='/'>
-          <a className='logo'>
-            Tashila
-          </a>
+          <a className='logo'>Tashila</a>
         </Link>
 
         <button
@@ -43,6 +41,11 @@ const Navbar = ({ lr, nr, theme }) => {
             <li className='nav-item' onClick={handleDropdown}>
               <Link href={`/portfolio`}>
                 <a className='nav-link'>Portfolio</a>
+              </Link>
+            </li>
+            <li className='nav-item' onClick={handleDropdown}>
+              <Link href={`/library`}>
+                <a className='nav-link'>Library</a>
               </Link>
             </li>
             <li className='nav-item' onClick={handleDropdown}>
