@@ -3,8 +3,8 @@ import React from 'react';
 import DarkTheme from '@layouts/Dark';
 import Navbar from '@components/Navbar/navbar';
 import Footer from '@components/Footer/footer';
-import WorksHeader from '@components/Works-header/works-header';
-import WorksStyle2 from '@components/Works-style2/works-style2';
+import Header from '@components/Text-header';
+import Projects from '@components/Projects-grid';
 
 const Portfolio = () => {
   const fixedHeader = React.useRef(null);
@@ -45,9 +45,9 @@ const Portfolio = () => {
         </div>
       </div>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <WorksHeader sliderRef={fixedHeader} />
+      <Header sliderRef={fixedHeader} title='Portfolio' backText='Portfolio' />
       <div ref={MainContent} className='main-content'>
-        <WorksStyle2 grid={3} filterPosition='center' />
+        <Projects grid={3} filterPosition='center' />
         <Footer />
       </div>
     </DarkTheme>
