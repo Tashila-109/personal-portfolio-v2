@@ -149,7 +149,7 @@ const CodeSnippetsGrid = () => {
           </div>
         </div>
         <div className={classNames('mt-30 text-center', styles.Buttons)}>
-          <Link href={`/`}>
+          <Link href={`/library`}>
             <a className='butn bord curve'>
               <span>See More Projects</span>
             </a>
