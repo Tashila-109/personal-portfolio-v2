@@ -3,7 +3,7 @@ import React from 'react';
 import DarkTheme from '@layouts/Dark';
 import Navbar from '@components/Navbar/navbar';
 import Intro from '@components/Intro/intro';
-import AboutUs from '@components/About-us/about-us';
+import AboutMe from '@components/About-me/about-me';
 import Works from '@components/Works-section-grid';
 import Blogs from '@components/Blogs-section';
 import CodeSnippets from '@components/Code-snippets-section';
@@ -34,7 +34,7 @@ const Home = () => {
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <Intro />
-      <AboutUs />
+      <AboutMe />
       <Works />
       <Blogs />
       <CodeSnippets />

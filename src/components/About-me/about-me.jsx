@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import classNames from 'classnames';
 
-import styles from './about-us.module.css';
+import styles from './about-me.module.css';
 
 const AboutMe = () => {
   return (
