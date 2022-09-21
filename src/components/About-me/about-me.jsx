@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import classNames from 'classnames';
+import { IconContext } from 'react-icons';
+import { SiNextdotjs, SiTypescript, SiNodedotjs, SiDotnet } from 'react-icons/si';
 
 import styles from './about-me.module.css';
 
@@ -18,7 +20,7 @@ const AboutMe = () => {
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam Sed ut
                 perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
               </p>
-              <Link href='/about/about-dark'>
+              <Link href='/about'>
                 <a className={classNames('butn bord curve mt-30', styles.Buttons)}>
                   <span>More About Me</span>
                 </a>
@@ -34,11 +36,24 @@ const AboutMe = () => {
             />
             <div className='stauts'>
               <div className='item'>
-                <h4>
-                  14
-                  <span>k</span>
-                </h4>
-                <h6>Something</h6>
+                <IconContext.Provider value={{ color: '#141414', size: '3rem', className: styles.Icons }}>
+                  <a href='https://nextjs.org/' target='_blank' rel='noreferrer' className={classNames(styles.Buttons)}>
+                    <SiNextdotjs />
+                  </a>
+                  <a href='https://www.typescriptlang.org/' target='_blank' rel='noreferrer' className={classNames(styles.Buttons)}>
+                    <SiTypescript />
+                  </a>
+                </IconContext.Provider>
+              </div>
+              <div className='item'>
+                <IconContext.Provider value={{ color: '#ffffff', size: '3rem', className: styles.Icons }}>
+                  <a href='https://nodejs.org/en/' target='_blank' rel='noreferrer' className={classNames(styles.Buttons)}>
+                    <SiNodedotjs />
+                  </a>
+                  <a href='https://dotnet.microsoft.com/en-us/' target='_blank' rel='noreferrer' className={classNames(styles.Buttons)}>
+                    <SiDotnet />
+                  </a>
+                </IconContext.Provider>
               </div>
             </div>
           </div>
