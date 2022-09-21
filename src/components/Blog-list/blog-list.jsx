@@ -10,7 +10,7 @@ const BlogList = ({ blogs }) => {
         <div className="row justify-content-center">
           <div className="col-lg-11">
             <div className="posts mt-80">
-              {blogs.map((blogItem, index) => (
+              {blogs.map((blogItem) => (
                 <div
                   className="item mb-80 wow fadeInUp"
                   key={blogItem.id}
@@ -26,7 +26,7 @@ const BlogList = ({ blogs }) => {
                       <div className="cont">
                         <div>
                           <div className="info">
-                            <Link href="/blog/blog-dark">
+                            <Link href="/blog/details">
                               <a className="date">
                                 <span>
                                   <i>{blogItem.date.day}</i>
@@ -36,7 +36,7 @@ const BlogList = ({ blogs }) => {
                             </Link>
                             <span>/</span>
                             {blogItem.tags.map((tag, index) => (
-                              <Link key={index} href="/blog/blog-dark">
+                              <Link key={index} href="/blog/details">
                                 <a className="tag">
                                   <span>{tag}</span>
                                 </a>
@@ -64,13 +64,13 @@ const BlogList = ({ blogs }) => {
               ))}
               <div className="pagination">
                 <span className="active">
-                  <Link href={`/blog/blog-dark`}>1</Link>
+                  <Link href={`/blog/details`}>1</Link>
                 </span>
                 <span>
-                  <Link href={`/blog/blog-dark`}>2</Link>
+                  <Link href={`/blog/details`}>2</Link>
                 </span>
                 <span>
-                  <Link href={`/blog/blog-dark`}>
+                  <Link href={`/blog/details`}>
                     <a>
                       <i className="fas fa-angle-right"></i>
                     </a>

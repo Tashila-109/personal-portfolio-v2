@@ -6,7 +6,7 @@ import Header from '@components/Text-header';
 import Projects from '@components/Projects-grid';
 import Footer from '@components/Footer/footer';
 
-const Portfolio = () => {
+const Library = () => {
   const fixedHeader = React.useRef(null);
   const MainContent = React.useRef(null);
   const navbarRef = React.useRef(null);
@@ -45,7 +45,7 @@ const Portfolio = () => {
         </div>
       </div>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <Header sliderRef={fixedHeader} title='Portfolio' backText='Portfolio' />
+      <Header sliderRef={fixedHeader} title='Code Snippet Library' backText='Library' />
       <div ref={MainContent} className='main-content'>
         <Projects grid={3} filterPosition='center' />
         <Footer />
@@ -54,4 +54,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Library;

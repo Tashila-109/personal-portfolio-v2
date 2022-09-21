@@ -1,26 +1,16 @@
 import React from 'react';
-
+import blog2Data from '@data/blog2.json';
 import DarkTheme from '@layouts/Dark';
 import Navbar from '@components/Navbar/navbar';
-import Header from '@components/Text-header';
-import Projects from '@components/Projects-grid';
+import BlogListed from '@components/Blog-list/blog-list';
+import PageHeader from '@components/Page-header/page-header';
 import Footer from '@components/Footer/footer';
 
-const Portfolio = () => {
-  const fixedHeader = React.useRef(null);
-  const MainContent = React.useRef(null);
+const Blog = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
   React.useEffect(() => {
-    setInterval(() => {
-      if (fixedHeader.current) {
-        const slidHeight = fixedHeader.current.offsetHeight;
-        if (MainContent.current) {
-          MainContent.current.style.marginTop = slidHeight + 'px';
-        }
-      }
-    }, 1000);
     const navbar = navbarRef.current;
     if (window.pageYOffset > 300) {
       navbar.classList.add('nav-scroll');
@@ -34,7 +24,7 @@ const Portfolio = () => {
         navbar.classList.remove('nav-scroll');
       }
     });
-  }, [fixedHeader, MainContent, navbarRef]);
+  }, [navbarRef]);
 
   return (
     <DarkTheme>
@@ -45,13 +35,11 @@ const Portfolio = () => {
         </div>
       </div>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <Header sliderRef={fixedHeader} title='Portfolio' backText='Portfolio' />
-      <div ref={MainContent} className='main-content'>
-        <Projects grid={3} filterPosition='center' />
-        <Footer />
-      </div>
+      <PageHeader className='sub-bg' title='Blog Posts' paragraph='Writing down my expereinces with Software Development' />
+      <BlogListed blogs={blog2Data} />
+      <Footer />
     </DarkTheme>
   );
 };
 
-export default Portfolio;
+export default Blog;
