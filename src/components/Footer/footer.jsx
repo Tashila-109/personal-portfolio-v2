@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import classNames from 'classnames';
 
 import styles from './footer.module.css';
@@ -52,12 +53,12 @@ const Footer = ({ hideBGCOLOR }) => {
               <div className='title'>
                 <h5>Recent Blog Posts</h5>
               </div>
-              <ul>
+              <ul className={styles.UpfrontPosition}>
                 <li>
                   <div className='img'>
                     <Link href='/blog-details/blog-details-dark'>
                       <a>
-                        <img src='/img/blog/1.jpg' alt='' />
+                        <Image src='/img/blog/1.jpg' alt='' width={136.64} height={76.51} />
                       </a>
                     </Link>
                   </div>
@@ -78,7 +79,7 @@ const Footer = ({ hideBGCOLOR }) => {
                   <div className='img'>
                     <Link href='/blog-details/blog-details-dark'>
                       <a>
-                        <img src='/img/blog/2.jpg' alt='' />
+                        <Image src='/img/blog/2.jpg' alt='' width={136.64} height={76.51} />
                       </a>
                     </Link>
                   </div>
