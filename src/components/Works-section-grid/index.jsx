@@ -43,13 +43,13 @@ const WorksSectionGrid = () => {
           </div> */}
 
           <div className='gallery full-width'>
-            <div className='col-md-6 items graphic lg-mr wow fadeInUp' data-wow-delay='.4s'>
+            <div className={classNames('col-md-6 items graphic lg-mr wow fadeInUp', styles.UpfrontPosition)} data-wow-delay='.4s'>
               <div className='item-img'>
                 <div className='cont'>
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='rota'>
                     <Image src='/img/portfolio/freelancer/1.jpg' alt='image' width={460} height={345} />
                     <div className='item-img-overlay'></div>
@@ -57,25 +57,25 @@ const WorksSectionGrid = () => {
                 </Link>
                 <div className='tags'>
                   <span>
-                    <Link href='/works2/works2-dark'>App</Link>
+                    <Link href='/portfolio/details'>App</Link>
                   </span>
                   <span>
-                    <Link href='/works2/works2-dark'>Fitnes</Link>
+                    <Link href='/portfolio/details'>Fitnes</Link>
                   </span>
                   <span>
-                    <Link href='/works2/works2-dark'>Creative</Link>
+                    <Link href='/portfolio/details'>Creative</Link>
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className='col-md-6 items web wow fadeInUp' data-wow-delay='.4s'>
+            <div className={classNames('col-md-6 items web wow fadeInUp', styles.UpfrontPosition)} data-wow-delay='.4s'>
               <div className='item-img'>
                 <div className='cont'>
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='rota'>
                     <Image src='/img/portfolio/freelancer/2.jpg' alt='image' width={460} height={345} />
                     <div className='item-img-overlay'></div>
@@ -83,13 +83,13 @@ const WorksSectionGrid = () => {
                 </Link>
                 <div className='tags'>
                   <span>
-                    <Link href='/works2/works2-dark'>App</Link>
+                    <Link href='/portfolio/details'>App</Link>
                   </span>
                   <span>
-                    <Link href='/works2/works2-dark'>Fitnes</Link>
+                    <Link href='/portfolio/details'>Fitnes</Link>
                   </span>
                   <span>
-                    <Link href='/works2/works2-dark'>Creative</Link>
+                    <Link href='/portfolio/details'>Creative</Link>
                   </span>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const WorksSectionGrid = () => {
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='rota'>
                     <Image src='/img/portfolio/freelancer/3.jpg' alt='image' width={460} height={345} />
                     <div className='item-img-overlay'></div>
@@ -109,13 +109,13 @@ const WorksSectionGrid = () => {
                 </Link>
                 <div className='tags'>
                   <span>
-                    <Link href='/works2/works2-dark'>App</Link>
+                    <Link href='/portfolio/details'>App</Link>
                   </span>
                   <span>
-                    <Link href='/works2/works2-dark'>Fitnes</Link>
+                    <Link href='/portfolio/details'>Fitnes</Link>
                   </span>
                   <span>
-                    <Link href='/works2/works2-dark'>Creative</Link>
+                    <Link href='/portfolio/details'>Creative</Link>
                   </span>
                 </div>
               </div>
@@ -127,7 +127,7 @@ const WorksSectionGrid = () => {
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={`/portfolio/details`}>
                   <a className='rota'>
                     <Image src='/img/portfolio/freelancer/4.jpg' alt='image' width={460} height={345} />
                     <div className='item-img-overlay'></div>
@@ -135,21 +135,21 @@ const WorksSectionGrid = () => {
                 </Link>
                 <div className='tags'>
                   <span>
-                    <Link href='/works2/works2-dark'>App</Link>
+                    <Link href='/portfolio/details'>App</Link>
                   </span>
                   <span>
-                    <Link href='/works2/works2-dark'>Fitnes</Link>
+                    <Link href='/portfolio/details'>Fitnes</Link>
                   </span>
                   <span>
-                    <Link href='/works2/works2-dark'>Creative</Link>
+                    <Link href='/portfolio/details'>Creative</Link>
                   </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className={classNames('mt-30 text-center', styles.Buttons)}>
-          <Link href={`/`}>
+        <div className={classNames('mt-30 text-center', styles.UpfrontPosition)}>
+          <Link href="/portfolio">
             <a className='butn bord curve'>
               <span>See More Projects</span>
             </a>

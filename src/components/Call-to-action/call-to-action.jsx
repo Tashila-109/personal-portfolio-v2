@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import classNames from 'classnames';
 
 import Split from '../Split';
@@ -24,11 +23,9 @@ const CallToAction = ({ img }) => {
           </div>
 
           <div className={classNames('col-md-4 col-lg-3 valign', styles.Buttons)}>
-            <Link href={`/`}>
-              <a className='butn bord curve wow fadeInUp' data-wow-delay='.5s'>
-                <span>Get In Touch</span>
+              <a href='mailto:tashila.dev@gmail.com' className='butn bord curve wow fadeInUp' data-wow-delay='.5s'>
+                <span>Email Me</span>
               </a>
-            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import classNames from 'classnames';
+
+import styles from './footer.module.css';
 
 const Footer = ({ hideBGCOLOR }) => {
   return (
@@ -16,13 +19,13 @@ const Footer = ({ hideBGCOLOR }) => {
                 <li>
                   <span className='icon pe-7s-mail'></span>
                   <div className='cont'>
-                    <h6>Email Me</h6>
-                    <p>tashila.dev@gmail.com</p>
+                    <h6>Email</h6>
+                    <a>tashila.dev@gmail.com</a>
                   </div>
                 </li>
               </ul>
             </div>
-            <div className='item'>
+            <div className={classNames(styles.UpfrontPosition, 'item')}>
               <div className='social'>
                 <a href='#0'>
                   <i className='fab fa-facebook-f'></i>
@@ -50,12 +53,12 @@ const Footer = ({ hideBGCOLOR }) => {
               <div className='title'>
                 <h5>Recent Blog Posts</h5>
               </div>
-              <ul>
+              <ul className={styles.UpfrontPosition}>
                 <li>
                   <div className='img'>
                     <Link href='/blog-details/blog-details-dark'>
                       <a>
-                        <img src='/img/blog/1.jpg' alt='' />
+                        <Image src='/img/blog/1.jpg' alt='' width={136.64} height={76.51} />
                       </a>
                     </Link>
                   </div>
@@ -76,7 +79,7 @@ const Footer = ({ hideBGCOLOR }) => {
                   <div className='img'>
                     <Link href='/blog-details/blog-details-dark'>
                       <a>
-                        <img src='/img/blog/2.jpg' alt='' />
+                        <Image src='/img/blog/2.jpg' alt='' width={136.64} height={76.51} />
                       </a>
                     </Link>
                   </div>

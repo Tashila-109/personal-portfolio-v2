@@ -47,7 +47,7 @@ const featuresData = [
   },
 ];
 
-const Services = ({ title = defaultProps.title, subTitle = defaultProps.subTitle, style, lines = false }) => {
+const Features = ({ title = defaultProps.title, subTitle = defaultProps.subTitle, style, lines = false }) => {
   return (
     <section className={`services bords section-padding ${style === '4item' ? 'lficon' : lines ? '' : 'pt-0'}`}>
       <div className='container'>
@@ -102,4 +102,4 @@ const Services = ({ title = defaultProps.title, subTitle = defaultProps.subTitle
   );
 };
 
-export default Services;
+export default Features;
