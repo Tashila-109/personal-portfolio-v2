@@ -1,6 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
+import classNames from 'classnames';
+
+import styles from './footer.module.css';
 
 const Footer = ({ hideBGCOLOR }) => {
   return (
@@ -17,12 +19,12 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className='icon pe-7s-mail'></span>
                   <div className='cont'>
                     <h6>Email</h6>
-                    <p>tashila.dev@gmail.com</p>
+                    <a>tashila.dev@gmail.com</a>
                   </div>
                 </li>
               </ul>
             </div>
-            <div className='item'>
+            <div className={classNames(styles.UpfrontPosition, 'item')}>
               <div className='social'>
                 <a href='#0'>
                   <i className='fab fa-facebook-f'></i>
